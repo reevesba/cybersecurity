@@ -1,0 +1,14 @@
+Case 1: 
+ciphertext = gsvjfrxpyildmulcqfnkhlevigsrigvvmozabwlth
+key = zyxwvutsrqponmlkjihgfedcba
+plaintext = thequickbrownfoxjumpsoverthirteenlazydogs
+
+Case 2: 
+ciphertext = dvoxlnvglgsvqfmtov
+key = zyxwvutsrqponmlkjihgfedcba
+plaintext = welcometothejungle
+
+Case 3: 
+ciphertext = wilkgsvkzxpztvzggdlgsivvvzhgyilzwdzb
+key = zyxwvutsrqponmlkjihgfedcba
+plaintext = dropthepackageattwothreeeastbroadway
