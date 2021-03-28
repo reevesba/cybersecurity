@@ -93,7 +93,7 @@ CSYEVIXIVQMREXIH
 
     ## Column Permutations
 
-    ## original col --> new col
+    ### original col --> new col
 
     ### C2 --> C1
 
@@ -219,7 +219,7 @@ CSYEVIXIVQMREXIH
 
     ## Row Permutations
 
-    ## original row --> new row
+    ### original row --> new row
 
     | - | 2 | 4 | 7 | 6 | 5 | 9 | 3 | 10 | 1 | 8 |
     | - | - | - | - | - | - | - | - | - | - | - | 
@@ -314,6 +314,8 @@ CSYEVIXIVQMREXIH
     | 7 | O | F | T | H | E | F | U | T | U | R |
     | 6 | E | L | E | T | T | H | E | M | C | O |
     | 2 | M | E | T | O | B | E | R | L | I | N |
+
+    ### Row Permutation is [3, 5, 1, 4, 7, 6, 2]
 
     ### "There are some who say that cdmmunism is the wave of the future. Let them come to Berlin."
 
