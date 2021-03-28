@@ -3,7 +3,7 @@
 
 1. Implement the A5/1 algorithm. Suppose that, after a particular step, the values in the registers are
 
-        X = (x<sub>0</sub>, x<sub>1</sub>, ..., x<sub>18</sub>) = (1010101010101010101)
+        X = (x<sub>0</sub>, x&#x2081;, ..., x<sub>18</sub>) = (1010101010101010101)
         Y = (y<sub>0</sub>, y<sub>1</sub>, ..., y<sub>21</sub>) = (1100110011001100110011)
         Z = (z<sub>0</sub>, z<sub>1</sub>, ..., z<sub>22</sub>) = (11100001111000011110000)
 
