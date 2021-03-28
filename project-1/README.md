@@ -1,11 +1,11 @@
 # Project 1
 
 
-1. Implement the A5/1 algorithm. Suppose that, after a particular step, the values in the registers are 
+1. Implement the A5/1 algorithm. Suppose that, after a particular step, the values in the registers are
 
-        X = (x'U+2080', x0x1d62, ..., x<sub>18</sub>) = (1010101010101010101)
-        Y = (y<sub>0</sub>, y<sub>1</sub>, ..., y<sub>21</sub>) = (1100110011001100110011)
-        Z = (z<sub>0</sub>, z<sub>1</sub>, ..., z<sub>22</sub>) = (11100001111000011110000)
+        X = (x₀, x₁, ..., x₁₈) = (1010101010101010101)
+        Y = (y₀, y₁, ..., y₂₁) = (1100110011001100110011)
+        Z = (z₀, z₁, ..., z₂₂) = (11100001111000011110000)
 
     List the next 32 keystream bits and give the contents of X, Y, and Z after these 32 bits have been generated. 
 
