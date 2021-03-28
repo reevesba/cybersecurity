@@ -1,4 +1,4 @@
-# About:    Project 0 Question 3
+# About:    Project 0 Questions 3 & 4
 # Author:   Bradley Reeves
 # Date:     03/27/2021
 
@@ -7,7 +7,6 @@ Potential Improvements:
     1. handle upper-case and foreign characters
     2. handle invalid inputs
     3. handle parial key guesses
-    5. build simple UI
 '''
 
 def char_counter(ciphertext):
