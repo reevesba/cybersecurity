@@ -10,6 +10,7 @@
     List the next 32 keystream bits and give the contents of X, Y, and Z after these 32 bits have been generated. 
 
     A.  ![A5/1 Output](images/a51-out.PNG?raw=true "Title")
+    
         [View Source Code](a51.c)
 
 
