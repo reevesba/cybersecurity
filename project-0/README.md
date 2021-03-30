@@ -49,7 +49,7 @@ CSYEVIXIVQMREXIH
 
 3.	Write a program to help an analyst decrypt a simple substitution cipher. Your program should take the ciphertext as input, compute letter frequency counts, and display these for the analyst. The program should then allow the analyst to guess a key and display the results of the corresponding "decryption" with the putative key.
 
-    A. See sub-decrypt.py for implementation. 
+    A. [View Source Code](sub-decrypt.py)
 
 
 4.	Use the program to determine the plaintext and key for the ciphertext that appears in the following Alice in Wonderland quote: 
