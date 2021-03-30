@@ -104,30 +104,30 @@ long stringToBinary(char *str) {
 }
 
 int parity(int x) {
-	x ^= x >> 16;
-	x ^= x >> 8;
-	x ^= x >> 4;
-	x ^= x >> 2;
-	x ^= x >> 1;
-	return x & 1;
+    x ^= x >> 16;
+    x ^= x >> 8;
+    x ^= x >> 4;
+    x ^= x >> 2;
+    x ^= x >> 1;
+    return x & 1;
 }
 
 // Get majority bit of LFSR clocking bits
 int majority(int LFSR1, int LFSR2, int LFSR3) {
     int sum = LFSR1 + LFSR2 + LFSR3;
-    
-	if (sum >= 2)
-		return 1;
-	else
-		return 0;
+
+    if (sum >= 2)
+        return 1;
+    else
+        return 0;
 }
 
 // Shift LFSR and return result
 int shift(int reg, int mask, int taps) {
-	int t = reg & taps;
-	reg = (reg << 1) & mask;
-	reg |= parity(t);
-	return reg;
+    int t = reg & taps;
+    reg = (reg << 1) & mask;
+    reg |= parity(t);
+    return reg;
 }
 
 // Output register values and keystream after generating keystream
