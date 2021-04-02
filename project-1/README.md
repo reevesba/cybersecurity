@@ -10,9 +10,9 @@
     List the next 32 keystream bits and give the contents of X, Y, and Z after these 32 bits have been generated. 
 
     A. 
-    ![A5/1 Output](images/a51-out.PNG?raw=true "Title")
+    ![A5/1 Output](img/a51-out.PNG?raw=true "Title")
 
-    [View Source Code](a51.c)
+    [View Source Code](a51/src/a51.c)
 
 
 2.	Implement the Tiny Encryption Algorithm (TEA). Use your TEA algorithm to encrypt the 64-bit plaintext block
@@ -25,24 +25,7 @@
 
     Decrypt the resulting ciphertext and verify that you obtain the original plaintext. The prefix 0x means hexadecimal integer.
 
-    What to upload in a compressed folder (Canvas): Your code, the results, your conclusions/observations.
+    A.
+    ![TEA Output](img/tea-out.PNG?raw=true "Title")
+    [View Source Code](tea/src)
 
-    ## Grading criteria (100 points maximum)
-
-    ### Implement the A51 algorithm
-    | Criteria | Points |
-    | - | - |	
-    | Show the output of the next 32 keystream bits | 20 |
-    | Show contents/output of X, Y, Z after these 32 bits have been generated |	20 |
-
-    ### Implement the TEA
-    | Criteria | Points |
-    | - | - | 	
-    | Encrypt the given plain text with given key | 20 |
-    | Decrypt the cipher text and obtain original text | 20 |
-
-    ### Overall
-    | Criteria | Points | 
-    | - | - |
-    | Correct outputs | 15 |
-    | Conclusions and/or Output included | 5 |
