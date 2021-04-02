@@ -4,8 +4,8 @@
 
 ### Project 1: A5/1 & Tiny Encryption Algorithm (TEA)
 
-### Project 2:
+### Project 2: RSA, Knapsack, & Elliptic Curve
 
-### Project 3:
+### Project 3: Steganography
 
-### Project 4: 
+### Project 4: Buffer Overflow
