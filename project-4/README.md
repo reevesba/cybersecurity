@@ -17,3 +17,7 @@ Submit the source code of your program and the correct serial number.
 **Note:** securityclass.exe takes a serial number as a command line argument. So if you guess that the serial number may be 0000000, run it as follows: 
 
     securityclass.exe 0000000
+
+![linattack](img/linattack.png)
+
+For solution see [src/main.py](src/main.py)
