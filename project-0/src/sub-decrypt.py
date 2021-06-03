@@ -9,6 +9,7 @@ Potential Improvements:
     3. handle parial key guesses
 '''
 
+
 def char_counter(ciphertext):
     ''' Counts the frequency of each character in string
 
@@ -29,6 +30,7 @@ def char_counter(ciphertext):
 
     return dict(sorted(counts.items(), key=lambda x: x[1], reverse=True))
 
+
 def build_dict(key_guess):
     ''' Maps the plaintext alphabet to a ciphertext alphabet (key)
 
@@ -42,8 +44,13 @@ def build_dict(key_guess):
         dict
             Plaintext to ciphertext alphabet mapping
     '''
-    plaintext_alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+    plaintext_alphabet = [
+        'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j',
+        'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't',
+        'u', 'v', 'w', 'x', 'y', 'z'
+    ]
     return dict(zip(plaintext_alphabet, key_guess))
+
 
 def decrypt(ciphertext, key_guess):
     ''' Decrypts the ciphertext given a ciphertext alphabet (key)
@@ -63,6 +70,7 @@ def decrypt(ciphertext, key_guess):
     conversion_dict = build_dict(key_guess)
     return ''.join(conversion_dict[char] for char in ciphertext)
 
+
 def main():
     ciphertext = input("Enter Ciphertext: ").lower()
 
@@ -73,5 +81,6 @@ def main():
     plaintext = decrypt(ciphertext, key_guess)
     print("Result: " + plaintext)
 
-if __name__=="__main__":
+
+if __name__ == "__main__":
     main()

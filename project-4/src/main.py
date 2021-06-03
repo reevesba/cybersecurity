@@ -4,7 +4,7 @@ Author: Bradley Reeves
 Date: May 17, 2021
 
 This program demonstrates how a poorly designed application
-can be exploited with a linearization attack. The program 
+can be exploited with a linearization attack. The program
 securityclass.exe is flawed in that it validates a serial
 number one character at a time. We test each character for each
 position and select the one that takes the most time due to
@@ -25,6 +25,7 @@ SERNO_LEN = 7
 EXE_TRIES = 10
 MAX_TRIES = 9
 
+
 def list_to_str(num_list):
     ''' List to string convenience method
         Paramaters
@@ -37,6 +38,7 @@ def list_to_str(num_list):
     '''
     return "".join(str(n) for n in num_list)
 
+
 def execute_app(command, test_serno):
     ''' Run the executable
         Parameters
@@ -48,7 +50,12 @@ def execute_app(command, test_serno):
         -------
         Executable output
     '''
-    return check_output([command + test_serno + "; exit 0"], shell=True, universal_newlines=True)
+    return check_output(
+        [command + test_serno + "; exit 0"],
+        shell=True,
+        universal_newlines=True
+    )
+
 
 def get_last_digit(command, num_list):
     ''' Find the remaining digit by brute-force
@@ -69,13 +76,14 @@ def get_last_digit(command, num_list):
         output = execute_app(command, list_to_str(num_list))
     return list_to_str(num_list)
 
+
 def main():
     ''' Program driver
     '''
     num_list = [0 for _ in range(SERNO_LEN)]
     test_times = [0 for _ in digits]
 
-    # securityclass.exe works w/ Visual C++ 2015, 
+    # securityclass.exe works w/ Visual C++ 2015,
     # securityclass-new.exe works w/ Visual C++ 2015-2019
     command = "./securityclass-new.exe "
 
@@ -83,7 +91,10 @@ def main():
     for i in range(SERNO_LEN - 1):
         for j in range(len(digits)):
             num_list[i] = digits[j]
-            test_times[j] = timeit(lambda: execute_app(command, list_to_str(num_list)), number=EXE_TRIES)
+            test_times[j] = timeit(
+                lambda: execute_app(command, list_to_str(num_list)),
+                number=EXE_TRIES
+            )
 
         num_list[i] = test_times.index(max(test_times))
         test_times = [0 for _ in digits]
@@ -96,6 +107,7 @@ def main():
     print("Result:",  execute_app(command, list_to_str(num_list)))
 
     return 0
+
 
 if __name__ == "__main__":
     main()
