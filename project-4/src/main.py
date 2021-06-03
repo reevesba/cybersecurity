@@ -22,7 +22,7 @@ from string import digits
 from timeit import timeit
 
 SERNO_LEN = 7
-EXE_TRIES = 5
+EXE_TRIES = 10
 MAX_TRIES = 9
 
 def list_to_str(num_list):
@@ -74,7 +74,10 @@ def main():
     '''
     num_list = [0 for _ in range(SERNO_LEN)]
     test_times = [0 for _ in digits]
-    command = "./securityclass.exe "
+
+    # securityclass.exe works w/ Visual C++ 2015, 
+    # securityclass-new.exe works w/ Visual C++ 2015-2019
+    command = "./securityclass-new.exe "
 
     # Iterate through each digit for each position
     for i in range(SERNO_LEN - 1):
